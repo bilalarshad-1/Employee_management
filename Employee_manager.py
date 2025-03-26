@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 
-FILE_PATH = "Employees.xlsx"
+FILE_PATH = "Employees_record.xlsx"
 
 
 def load_data():
