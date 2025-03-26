@@ -29,7 +29,7 @@ def list_all_emp(emp):
     print("\n" + "*" * 70)
     for index, employee in enumerate(emp, start=1):
         print(f"{index}. {employee['Name']}, Department: {employee['Department']}, Role: {employee['Role']}, "
-              f"Joining Date: {employee['Joining Date']}, Monthly Salary: ${employee['Monthly Salary']}")
+              f"Joining Date: {employee['Joining Date']}, Monthly Salary: Rs:{employee['Monthly Salary']}")
     print("*" * 70 + "\n")
 
 
