@@ -38,7 +38,7 @@ def add_employee(emp):
     department = input("Enter Employee Department: ") or "Not Assigned"
     role = input("Enter Employee Role: ") or "Not Specified"
     joining_date = input("Enter Employee Joining Date (YYYY-MM-DD): ") or "Unknown"
-    monthly_salary = input("Enter Employee Monthly Salary: $") or "0"
+    monthly_salary = input("Enter Employee Monthly Salary: Rs:  ") or "0"
 
     emp.append({
         'Name': name,
@@ -65,7 +65,7 @@ def update_employee(emp):
             emp[index]['Department'] = input("Enter New Employee Department: ") or emp[index]['Department']
             emp[index]['Role'] = input("Enter New Employee Role: ") or emp[index]['Role']
             emp[index]['Joining Date'] = input("Enter New Employee Joining Date (YYYY-MM-DD): ") or emp[index]['Joining Date']
-            emp[index]['Monthly Salary'] = input("Enter New Employee Monthly Salary: $") or emp[index]['Monthly Salary']
+            emp[index]['Monthly Salary'] = input("Enter New Employee Monthly Salary: Rs:  ") or emp[index]['Monthly Salary']
             
             save_data(emp)
             print("\nEmployee details updated successfully!\n")
